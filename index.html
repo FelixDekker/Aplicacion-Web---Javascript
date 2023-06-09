@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Sistema de Gestión de Notas</title>
+</head>
+<body>
+    <h1>Sistema de Gestión de Notas del Alumnado</h1>
+    <h3>Utiliza este sistema de gestión para administrar las notas de tus alumnos y visualizar sus datos como prefieras.</h3>
+    <div class="container">
+        <form id="formulario">
+            <h2>Datos de los alumnos</h2>
+            <input type="text" id="nombre" class="formulario" placeholder="Ingrese su nombre completo...">
+            <input type="text" id="curso" class="formulario" placeholder="Ingrese su curso...">
+            <input type="number" id="nota1erparcial" class="formulario" placeholder="Ingrese la nota del primer parcial...">
+            <input type="number" id="nota2doparcial" class="formulario" placeholder="Ingrese la nota del segundo parcial...">
+            <input type="number" id="notaconcepto" class="formulario" placeholder="Ingrese la nota de concepto...">
+            <button id="btn-enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+    <br>
+    <button id="btn-mejor-promedio">Mostrar alumno con el mejor promedio</button>
+    <button id="btn-peor-promedio">Mostrar alumno con el peor promedio</button>
+    <button id="btn-generar-grafico">Generar Gráfico Total de Alumnos Ingresados</button>
+    <button id="btn-borrar-datos">Borrar Datos Ingresados</button>
+    <canvas id="grafico" width="20" height="10"></canvas>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
